@@ -22,7 +22,7 @@ packer:
 # Link to /usr/local/bin/packer
 /usr/local/bin/packer:
   file.symlink:
-    - target: /opt/packer-{{ packer_version }}
+    - target: /opt/packer-{{ packer_version }}/packer
     - require:
       - archive: packer
 
